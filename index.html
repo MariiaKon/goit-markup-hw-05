@@ -43,7 +43,7 @@
         <section class="hero-section">
             <div class="container hero">
                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-               <button class="order-button" type="button">Заказать услугу</button>
+               <button class="order-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -78,13 +78,28 @@
             <h2 class="container-title">Чем мы занимаемся</h2>
             <ul class="manufacture-list">
                 <li class="list-item">
-                    <img src="./images/img1.webp" alt="пишем код">
+                    <div class="manufacture-card">
+                    <img src="./images/img1.webp" alt="Десктопные приложения">
+                    <div class="manufacture-overlay">
+                        <p>Десктопные приложения</p>
+                    </div>
+                    </div>
                 </li>
                 <li class="list-item">
-                    <img src="./images/img2.webp" alt="разрабатываем дизайн">
+                    <div class="manufacture-card">
+                    <img src="./images/img2.webp" alt="Мобильные приложения">
+                    <div class="manufacture-overlay">
+                        <p>Мобильные приложения</p>
+                    </div>
+                    </div>
                 </li>
                 <li class="list-item">
-                    <img src="./images/img3.webp" alt="подбираем палитру">
+                    <div class="manufacture-card">
+                    <img src="./images/img3.webp" alt="Дизайнерские решения">
+                    <div class="manufacture-overlay">
+                        <p>Дизайнерские решения</p>
+                    </div>
+                    </div>
                 </li>
             </ul>
             </div>
@@ -328,5 +343,16 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-btn" data-modal-close>
+                <svg class="close-btn-icon">
+                    <use href="./images/icon/sprite/symbol-defs.svg#close-mobile"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
