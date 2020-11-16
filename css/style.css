@@ -118,7 +118,7 @@ img {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
@@ -619,7 +619,7 @@ img {
   height: 404px;
   border: 1px solid transparent;
 
-    transition-property: border;
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
@@ -675,7 +675,6 @@ img {
 }
 .footer-contacts,
 .adress-link {
-  width: 231px;
   height: 21px;
   line-height: 1.71;
 
@@ -790,9 +789,4 @@ img {
 .portfolio-link:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
   transform: translateY(0);
-}
-
-button:active {
-  outline: none;
-  border-style: none;
 }
